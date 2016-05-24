@@ -1,15 +1,15 @@
 # hearingcareResearchKit
 
 ------
-# Bem vindo
+# Welcome
 
-O teste de surdez é uma pesquisa que utiliza seu device iOS para poder auxiliar nas pesquisas relacionadas ao estilo de vida com sua capacidade de audição. 
+The deafness test is a survey that uses your device iOS in order to assist at researchs related to lifestyle with your listening ability.
 
 ------
 # Team
 ------
 
-| Usuário         | Nome               |
+| Username         | Name               |
 |-----------------|--------------------|
 | @felipeperius    | Felipe Perius      |
 | @lucasbut      | Lucas Freitas de Oliveira    |
