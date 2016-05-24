@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4CC5FB41CF4DABE008626C8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */; };
+		A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */; };
+		A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */; };
+		A4CC5FF21CF4E900008626C8 /* AuthorizationTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */; };
+		A4CC5FF51CF4EA06008626C8 /* ResearchTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF41CF4EA06008626C8 /* ResearchTasks.swift */; };
+		A4CC5FF71CF4EA96008626C8 /* MicrophoneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF61CF4EA96008626C8 /* MicrophoneTask.swift */; };
+		A4CC5FF91CF4F249008626C8 /* ResearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF81CF4F249008626C8 /* ResearchViewController.swift */; };
+		AD89B0BB1CF4CD720006A20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89B0BA1CF4CD720006A20B /* AppDelegate.swift */; };
+		AD89B0BD1CF4CD720006A20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89B0BC1CF4CD720006A20B /* ViewController.swift */; };
+		AD89B0C01CF4CD720006A20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD89B0BE1CF4CD720006A20B /* Main.storyboard */; };
+		AD89B0C21CF4CD720006A20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD89B0C11CF4CD720006A20B /* Assets.xcassets */; };
+		AD89B0C51CF4CD720006A20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD89B0C31CF4CD720006A20B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4CC5FB01CF4DAA3008626C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		A4CC5FB21CF4DAA3008626C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchAuthorizationViewController.swift; sourceTree = "<group>"; };
+		A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationForm.swift; sourceTree = "<group>"; };
+		A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationTasks.swift; sourceTree = "<group>"; };
+		A4CC5FF41CF4EA06008626C8 /* ResearchTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchTasks.swift; sourceTree = "<group>"; };
+		A4CC5FF61CF4EA96008626C8 /* MicrophoneTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneTask.swift; sourceTree = "<group>"; };
+		A4CC5FF81CF4F249008626C8 /* ResearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchViewController.swift; sourceTree = "<group>"; };
+		AD89B0B71CF4CD720006A20B /* hearingCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hearingCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD89B0BA1CF4CD720006A20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD89B0BC1CF4CD720006A20B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD89B0BF1CF4CD720006A20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD89B0C11CF4CD720006A20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD89B0C41CF4CD720006A20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD89B0C61CF4CD720006A20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD89B0B41CF4CD720006A20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CC5FB41CF4DABE008626C8 /* ResearchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4CC5FAB1CF4DAA3008626C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */,
+				A4CC5FB31CF4DAA3008626C8 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4CC5FB71CF4DB83008626C8 /* ResearchAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */,
+				A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */,
+			);
+			name = ResearchAuthorization;
+			sourceTree = "<group>";
+		};
+		A4CC5FF31CF4E9B6008626C8 /* ResearchTasks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC5FF41CF4EA06008626C8 /* ResearchTasks.swift */,
+				A4CC5FF61CF4EA96008626C8 /* MicrophoneTask.swift */,
+			);
+			name = ResearchTasks;
+			sourceTree = "<group>";
+		};
+		AD89B0AE1CF4CD720006A20B = {
+			isa = PBXGroup;
+			children = (
+				A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */,
+				AD89B0B91CF4CD720006A20B /* researchKitDesafio */,
+				AD89B0B81CF4CD720006A20B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD89B0B81CF4CD720006A20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD89B0B71CF4CD720006A20B /* hearingCare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD89B0B91CF4CD720006A20B /* researchKitDesafio */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC5FB71CF4DB83008626C8 /* ResearchAuthorization */,
+				A4CC5FF31CF4E9B6008626C8 /* ResearchTasks */,
+				AD89B0BA1CF4CD720006A20B /* AppDelegate.swift */,
+				AD89B0BC1CF4CD720006A20B /* ViewController.swift */,
+				A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */,
+				A4CC5FF81CF4F249008626C8 /* ResearchViewController.swift */,
+				AD89B0BE1CF4CD720006A20B /* Main.storyboard */,
+				AD89B0C11CF4CD720006A20B /* Assets.xcassets */,
+				AD89B0C31CF4CD720006A20B /* LaunchScreen.storyboard */,
+				AD89B0C61CF4CD720006A20B /* Info.plist */,
+			);
+			path = researchKitDesafio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD89B0B61CF4CD720006A20B /* hearingCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD89B0C91CF4CD720006A20B /* Build configuration list for PBXNativeTarget "hearingCare" */;
+			buildPhases = (
+				AD89B0B31CF4CD720006A20B /* Sources */,
+				AD89B0B41CF4CD720006A20B /* Frameworks */,
+				AD89B0B51CF4CD720006A20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hearingCare;
+			productName = researchKitDesafio;
+			productReference = AD89B0B71CF4CD720006A20B /* hearingCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD89B0AF1CF4CD720006A20B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lucas Freitas de Oliveira";
+				TargetAttributes = {
+					AD89B0B61CF4CD720006A20B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AD89B0B21CF4CD720006A20B /* Build configuration list for PBXProject "hearingCare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD89B0AE1CF4CD720006A20B;
+			productRefGroup = AD89B0B81CF4CD720006A20B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4CC5FAB1CF4DAA3008626C8 /* Products */;
+					ProjectRef = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AD89B0B61CF4CD720006A20B /* hearingCare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = A4CC5FB01CF4DAA3008626C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4CC5FB31CF4DAA3008626C8 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = A4CC5FB21CF4DAA3008626C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD89B0B51CF4CD720006A20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD89B0C51CF4CD720006A20B /* LaunchScreen.storyboard in Resources */,
+				AD89B0C21CF4CD720006A20B /* Assets.xcassets in Resources */,
+				AD89B0C01CF4CD720006A20B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD89B0B31CF4CD720006A20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CC5FF21CF4E900008626C8 /* AuthorizationTasks.swift in Sources */,
+				AD89B0BD1CF4CD720006A20B /* ViewController.swift in Sources */,
+				AD89B0BB1CF4CD720006A20B /* AppDelegate.swift in Sources */,
+				A4CC5FF91CF4F249008626C8 /* ResearchViewController.swift in Sources */,
+				A4CC5FF71CF4EA96008626C8 /* MicrophoneTask.swift in Sources */,
+				A4CC5FF51CF4EA06008626C8 /* ResearchTasks.swift in Sources */,
+				A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */,
+				A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD89B0BE1CF4CD720006A20B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD89B0BF1CF4CD720006A20B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD89B0C31CF4CD720006A20B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD89B0C41CF4CD720006A20B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD89B0C71CF4CD720006A20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD89B0C81CF4CD720006A20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD89B0CA1CF4CD720006A20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = researchKitDesafio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;
+				PRODUCT_NAME = hearingCare;
+			};
+			name = Debug;
+		};
+		AD89B0CB1CF4CD720006A20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = researchKitDesafio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;
+				PRODUCT_NAME = hearingCare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD89B0B21CF4CD720006A20B /* Build configuration list for PBXProject "hearingCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD89B0C71CF4CD720006A20B /* Debug */,
+				AD89B0C81CF4CD720006A20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD89B0C91CF4CD720006A20B /* Build configuration list for PBXNativeTarget "hearingCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD89B0CA1CF4CD720006A20B /* Debug */,
+				AD89B0CB1CF4CD720006A20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD89B0AF1CF4CD720006A20B /* Project object */;
+}
