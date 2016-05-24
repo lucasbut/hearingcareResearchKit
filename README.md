@@ -3,8 +3,7 @@
 ------
 # Bem vindo
 
-O teste de surdez é uma pesquisa que utiliza seu device iOS para poder auxiliar nas pesquisas relacionadas ao
-estilo de vida com sua capacidade de audição. 
+O teste de surdez é uma pesquisa que utiliza seu device iOS para poder auxiliar nas pesquisas relacionadas ao estilo de vida com sua capacidade de audição. 
 ------
 
 
