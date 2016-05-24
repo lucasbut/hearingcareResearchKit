@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4CC5FB41CF4DABE008626C8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */; };
+		7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */; };
+		7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
 		A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */; };
 		A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */; };
 		A4CC5FF21CF4E900008626C8 /* AuthorizationTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */; };
@@ -22,16 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4CC5FB01CF4DAA3008626C8 /* PBXContainerItemProxy */ = {
+		7014A4201CF4F84300FD28A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		A4CC5FB21CF4DAA3008626C8 /* PBXContainerItemProxy */ = {
+		7014A4221CF4F84300FD28A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
@@ -39,7 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioGeneratorTask.swift; sourceTree = "<group>"; };
+		7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchAuthorizationViewController.swift; sourceTree = "<group>"; };
 		A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationForm.swift; sourceTree = "<group>"; };
 		A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationTasks.swift; sourceTree = "<group>"; };
@@ -60,18 +62,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CC5FB41CF4DABE008626C8 /* ResearchKit.framework in Frameworks */,
+				7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4CC5FAB1CF4DAA3008626C8 /* Products */ = {
+		7014A41B1CF4F84300FD28A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */,
-				A4CC5FB31CF4DAA3008626C8 /* ResearchKitTests.xctest */,
+				7014A4211CF4F84300FD28A5 /* ResearchKit.framework */,
+				7014A4231CF4F84300FD28A5 /* ResearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +92,7 @@
 			children = (
 				A4CC5FF41CF4EA06008626C8 /* ResearchTasks.swift */,
 				A4CC5FF61CF4EA96008626C8 /* MicrophoneTask.swift */,
+				7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */,
 			);
 			name = ResearchTasks;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 		AD89B0AE1CF4CD720006A20B = {
 			isa = PBXGroup;
 			children = (
-				A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */,
+				7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */,
 				AD89B0B91CF4CD720006A20B /* researchKitDesafio */,
 				AD89B0B81CF4CD720006A20B /* Products */,
 			);
@@ -176,8 +179,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A4CC5FAB1CF4DAA3008626C8 /* Products */;
-					ProjectRef = A4CC5FAA1CF4DAA3008626C8 /* ResearchKit.xcodeproj */;
+					ProductGroup = 7014A41B1CF4F84300FD28A5 /* Products */;
+					ProjectRef = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -188,18 +191,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A4CC5FB11CF4DAA3008626C8 /* ResearchKit.framework */ = {
+		7014A4211CF4F84300FD28A5 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = A4CC5FB01CF4DAA3008626C8 /* PBXContainerItemProxy */;
+			remoteRef = 7014A4201CF4F84300FD28A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A4CC5FB31CF4DAA3008626C8 /* ResearchKitTests.xctest */ = {
+		7014A4231CF4F84300FD28A5 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = A4CC5FB21CF4DAA3008626C8 /* PBXContainerItemProxy */;
+			remoteRef = 7014A4221CF4F84300FD28A5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -228,6 +231,7 @@
 				A4CC5FF91CF4F249008626C8 /* ResearchViewController.swift in Sources */,
 				A4CC5FF71CF4EA96008626C8 /* MicrophoneTask.swift in Sources */,
 				A4CC5FF51CF4EA06008626C8 /* ResearchTasks.swift in Sources */,
+				7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */,
 				A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */,
 				A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */,
 			);
