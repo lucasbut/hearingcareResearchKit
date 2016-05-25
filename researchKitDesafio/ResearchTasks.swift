@@ -15,56 +15,87 @@ public var ResearchTasks: ORKOrderedTask {
     
     ///Instruções
     let instructions = ORKInstructionStep(identifier: "Instrucoes")
-    instructions.title = "Titulo da pesquisa"
+    instructions.title = "Pesquisa sobre saude auditiva"
     instructions.text = "Instruções da pesquisa."
     steps += [instructions]
     
     
     
-    ///
-    let nameAnswerFormat = ORKTextAnswerFormat(maximumLength: 20)
-    nameAnswerFormat.multipleLines = false
-    let nameQuestionStepTitle = "What is your name?"
-    let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat)
-    steps += [nameQuestionStep]
-    
-    
-    
-    ///Pesquisa
-    let questionTitle = "O que você está sentindo?"
+
+    ///Infoma faixa etaria
+    let questionTitle = "Informe sua faixa-etária?"
     let options = [
-        ORKTextChoice(text: "Eu tenho dores de cabeça", value: 0),
-        ORKTextChoice(text: "Eu tenho gripe", value: 1),
-        ORKTextChoice(text: "Eu tenho febre", value: 2)
+        ORKTextChoice(text: "Abaixo de 15 anos (Criança)", value: 0),
+        ORKTextChoice(text: "Entre 15 e 17 anos(Adolescente)", value: 1),
+        ORKTextChoice(text: "Entre 18 e 24 anos (Jovem)   ", value: 2),
+        ORKTextChoice(text: "Entre 25 e 29 anos (jovem adulto).", value: 3),
+        ORKTextChoice(text: "Entre 30 e 60 anos (adulto).", value: 4),
+        ORKTextChoice(text: "Acima de 60 anos (idoso).", value: 5),
     ]
     let answerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: options)
-    let perguntaProblemaDoUsuario = ORKQuestionStep(identifier: "perguntaProblemaDoUsuario", title: questionTitle, answer: answerFormat)
-    steps += [perguntaProblemaDoUsuario]
+    let perguntaFaixaEtaria = ORKQuestionStep(identifier: "perguntaFaixaEtaria", title: questionTitle, answer: answerFormat)
+    steps += [perguntaFaixaEtaria]
+   
+
+    
+  
+    ///Infoma problema auditivo na famili
+    let questionHistoryTitle = "Tem algum histórico de problema auditivo na familia?"
+    let optionsHistory = [
+        ORKTextChoice(text: "Sim", value: 0),
+        ORKTextChoice(text: "Não", value: 1),
+            ]
+    let answerHistoryFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: optionsHistory)
+    let askHistory = ORKQuestionStep(identifier: "perguntaHistoricoFamiliar", title: questionHistoryTitle, answer: answerHistoryFormat)
+    steps += [askHistory]
     
     
     
-    ///
-    let colorQuestionStepTitle = "What is your favorite color?"
-    let colorTuples = [
-        (UIImage(named: "red")!, "Red"),
-        (UIImage(named: "orange")!, "Orange"),
-        (UIImage(named: "yellow")!, "Yellow"),
-        (UIImage(named: "green")!, "Green"),
-        (UIImage(named: "blue")!, "Blue"),
-        (UIImage(named: "purple")!, "Purple")
-    ]
-    let imageChoices : [ORKImageChoice] = colorTuples.map {
-        return ORKImageChoice(normalImage: $0.0, selectedImage: nil, text: $0.1, value: $0.1)
-    }
-    let colorAnswerFormat: ORKImageChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithImageChoices(imageChoices)
-    let colorQuestionStep = ORKQuestionStep(identifier: "ImageChoiceQuestionStep", title: colorQuestionStepTitle, answer: colorAnswerFormat)
-    steps += [colorQuestionStep]
+    //Informa trabalha em locais barulhentos
+    let questionJobTitle = "Você trabalha em locais barulhentos, como em construções e fabricas?"
+    let optionsJob = [
+        ORKTextChoice(text: "Sim", value: 0),
+        ORKTextChoice(text: "Não", value: 1),
+        ]
+    let answerJobFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: optionsJob)
+    let askJob = ORKQuestionStep(identifier: "perguntaTrabalho", title: questionJobTitle, answer: answerJobFormat)
+    steps += [askJob]
     
+    
+    //Seu trabalho inclui o uso de armas de fogo e motores
+    let questionMotorTitle = "Seu trabalho inclui o uso de armas de fogo e motores a jato que podem causar surdez imediata e permanente ?"
+    let optionsMotor = [
+        ORKTextChoice(text: "Sim", value: 0),
+        ORKTextChoice(text: "Não", value: 1),
+        ]
+    let answerMotorFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: optionsMotor)
+    let askMotor = ORKQuestionStep(identifier: "perguntaMotor", title: questionMotorTitle, answer: answerMotorFormat)
+    steps += [askMotor]
+
+    
+    
+    //Seu trabalho inclui o uso de armas de fogo e motores
+    let questionCostumeTitle = " Tem o costume muita música alta, nos fones de ouvido ou não, e outras atividades de recriação, como motociclismo, podem aumentar muito o risco de perda auditiva ?"
+    let optionsCostume = [
+        ORKTextChoice(text: "Sim", value: 0),
+        ORKTextChoice(text: "Não", value: 1),
+        ]
+    let answerCostumeFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: optionsCostume)
+    let askCostume = ORKQuestionStep(identifier: "perguntaCostume", title: questionCostumeTitle, answer: answerCostumeFormat)
+    steps += [askCostume]
+
+
+    
+    
+    
+    
+    
+
     
     ///
     let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-    summaryStep.title = "Right. Off you go!"
-    summaryStep.text = "That was easy!"
+    summaryStep.title = "Muito bem vamos para o proximo passo =)!"
+    summaryStep.text = "Essa foi fácil!"
     steps += [summaryStep]
     
     return ORKOrderedTask(identifier: "TarefasDePesquisa", steps: steps)

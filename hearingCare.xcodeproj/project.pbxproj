@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F652BDC1CF620AF0052DF30 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
+		2F652BDD1CF620AF0052DF30 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */; };
 		7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
 		A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */; };
@@ -23,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2F652BDE1CF620AF0052DF30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 		7014A4201CF4F84300FD28A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
@@ -38,6 +47,20 @@
 			remoteInfo = ResearchKitTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F652BE01CF620AF0052DF30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F652BDD1CF620AF0052DF30 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioGeneratorTask.swift; sourceTree = "<group>"; };
@@ -62,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F652BDC1CF620AF0052DF30 /* ResearchKit.framework in Frameworks */,
 				7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +165,12 @@
 				AD89B0B31CF4CD720006A20B /* Sources */,
 				AD89B0B41CF4CD720006A20B /* Frameworks */,
 				AD89B0B51CF4CD720006A20B /* Resources */,
+				2F652BE01CF620AF0052DF30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F652BDF1CF620AF0052DF30 /* PBXTargetDependency */,
 			);
 			name = hearingCare;
 			productName = researchKitDesafio;
@@ -238,6 +264,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F652BDF1CF620AF0052DF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 2F652BDE1CF620AF0052DF30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD89B0BE1CF4CD720006A20B /* Main.storyboard */ = {
@@ -346,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = researchKitDesafio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;
@@ -357,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = researchKitDesafio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;

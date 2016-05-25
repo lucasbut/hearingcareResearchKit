@@ -13,7 +13,7 @@ class ResearchViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         
-        let taskViewController = ORKTaskViewController(task: MicrophoneTask, taskRunUUID: nil)
+        let taskViewController = ORKTaskViewController(task: ResearchTasks, taskRunUUID: nil)
         taskViewController.delegate = self
         presentViewController(taskViewController, animated: true, completion: nil)
         super.viewWillAppear(animated)
@@ -37,7 +37,6 @@ extension ResearchViewController : ORKTaskViewControllerDelegate {
             case .Failed:
                 break
             }
-
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
         
     }
