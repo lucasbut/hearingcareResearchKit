@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0275A8BB1CF61E2C00A4A75D /* HearingCareSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275A8BA1CF61E2C00A4A75D /* HearingCareSearch.swift */; };
 		7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */; };
 		7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
 		A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0275A8BA1CF61E2C00A4A75D /* HearingCareSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingCareSearch.swift; sourceTree = "<group>"; };
 		7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioGeneratorTask.swift; sourceTree = "<group>"; };
 		7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchAuthorizationViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		AD89B0AE1CF4CD720006A20B = {
 			isa = PBXGroup;
 			children = (
+				0275A8BA1CF61E2C00A4A75D /* HearingCareSearch.swift */,
 				7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */,
 				AD89B0B91CF4CD720006A20B /* researchKitDesafio */,
 				AD89B0B81CF4CD720006A20B /* Products */,
@@ -234,6 +237,7 @@
 				7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */,
 				A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */,
 				A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */,
+				0275A8BB1CF61E2C00A4A75D /* HearingCareSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
