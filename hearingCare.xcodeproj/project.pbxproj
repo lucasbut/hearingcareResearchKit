@@ -10,7 +10,9 @@
 		2F652BDC1CF620AF0052DF30 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
 		2F652BDD1CF620AF0052DF30 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */; };
-		7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
+		7014A42B1CF61C6800FD28A5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; };
+		7014A42D1CF61CBA00FD28A5 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7014A4211CF4F84300FD28A5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7014A4331CF62C3F00FD28A5 /* ORKAudioGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7014A4321CF62C3F00FD28A5 /* ORKAudioGenerator.m */; };
 		A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */; };
 		A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */; };
 		A4CC5FF21CF4E900008626C8 /* AuthorizationTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */; };
@@ -46,16 +48,32 @@
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
+		7014A4291CF61A5A00FD28A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		7014A42E1CF61CBA00FD28A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2F652BE01CF620AF0052DF30 /* Embed Frameworks */ = {
+		7014A4301CF61CBA00FD28A5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				2F652BDD1CF620AF0052DF30 /* ResearchKit.framework in Embed Frameworks */,
+				7014A42D1CF61CBA00FD28A5 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +83,9 @@
 /* Begin PBXFileReference section */
 		7014A4041CF4F6B300FD28A5 /* AudioGeneratorTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioGeneratorTask.swift; sourceTree = "<group>"; };
 		7014A41A1CF4F84300FD28A5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		7014A4311CF62C3F00FD28A5 /* ORKAudioGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORKAudioGenerator.h; path = "../ResearchKit/ResearchKit-master/ResearchKit/ActiveTasks/ORKAudioGenerator.h"; sourceTree = "<group>"; };
+		7014A4321CF62C3F00FD28A5 /* ORKAudioGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORKAudioGenerator.m; path = "../ResearchKit/ResearchKit-master/ResearchKit/ActiveTasks/ORKAudioGenerator.m"; sourceTree = "<group>"; };
+		7014A4351CF62C6E00FD28A5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A4CC5FB51CF4DB48008626C8 /* ResearchAuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchAuthorizationViewController.swift; sourceTree = "<group>"; };
 		A4CC5FEF1CF4E748008626C8 /* AuthorizationForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationForm.swift; sourceTree = "<group>"; };
 		A4CC5FF11CF4E900008626C8 /* AuthorizationTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationTasks.swift; sourceTree = "<group>"; };
@@ -87,6 +108,7 @@
 			files = (
 				2F652BDC1CF620AF0052DF30 /* ResearchKit.framework in Frameworks */,
 				7014A4241CF4F85200FD28A5 /* ResearchKit.framework in Frameworks */,
+				7014A42B1CF61C6800FD28A5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +122,16 @@
 				7014A4231CF4F84300FD28A5 /* ResearchKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7014A4341CF62C4200FD28A5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				7014A4311CF62C3F00FD28A5 /* ORKAudioGenerator.h */,
+				7014A4321CF62C3F00FD28A5 /* ORKAudioGenerator.m */,
+				7014A4351CF62C6E00FD28A5 /* Bridging-Header.h */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 		A4CC5FB71CF4DB83008626C8 /* ResearchAuthorization */ = {
@@ -141,6 +173,7 @@
 		AD89B0B91CF4CD720006A20B /* researchKitDesafio */ = {
 			isa = PBXGroup;
 			children = (
+				7014A4341CF62C4200FD28A5 /* Vendor */,
 				A4CC5FB71CF4DB83008626C8 /* ResearchAuthorization */,
 				A4CC5FF31CF4E9B6008626C8 /* ResearchTasks */,
 				AD89B0BA1CF4CD720006A20B /* AppDelegate.swift */,
@@ -166,11 +199,14 @@
 				AD89B0B41CF4CD720006A20B /* Frameworks */,
 				AD89B0B51CF4CD720006A20B /* Resources */,
 				2F652BE01CF620AF0052DF30 /* Embed Frameworks */,
+				7014A4301CF61CBA00FD28A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2F652BDF1CF620AF0052DF30 /* PBXTargetDependency */,
+				7014A42A1CF61A5A00FD28A5 /* PBXTargetDependency */,
+				7014A42F1CF61CBA00FD28A5 /* PBXTargetDependency */,
 			);
 			name = hearingCare;
 			productName = researchKitDesafio;
@@ -260,6 +296,7 @@
 				7014A4051CF4F6B300FD28A5 /* AudioGeneratorTask.swift in Sources */,
 				A4CC5FB61CF4DB48008626C8 /* ResearchAuthorizationViewController.swift in Sources */,
 				A4CC5FF01CF4E748008626C8 /* AuthorizationForm.swift in Sources */,
+				7014A4331CF62C3F00FD28A5 /* ORKAudioGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +307,15 @@
 			isa = PBXTargetDependency;
 			name = ResearchKit;
 			targetProxy = 2F652BDE1CF620AF0052DF30 /* PBXContainerItemProxy */;
+		7014A42A1CF61A5A00FD28A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 7014A4291CF61A5A00FD28A5 /* PBXContainerItemProxy */;
+		};
+		7014A42F1CF61CBA00FD28A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 7014A42E1CF61CBA00FD28A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -381,10 +427,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = researchKitDesafio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;
 				PRODUCT_NAME = hearingCare;
+				SWIFT_OBJC_BRIDGING_HEADER = "researchKitDesafio/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -393,10 +441,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = researchKitDesafio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FLTWY.hearingCare;
 				PRODUCT_NAME = hearingCare;
+				SWIFT_OBJC_BRIDGING_HEADER = "researchKitDesafio/Bridging-Header.h";
 			};
 			name = Release;
 		};
