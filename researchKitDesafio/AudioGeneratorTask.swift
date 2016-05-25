@@ -10,9 +10,6 @@ import ResearchKit
 
 public var AudioGeneratorTask: ORKOrderedTask {
     
-    
-    
-    
    return ORKOrderedTask.toneAudiometryTaskWithIdentifier("", intendedUseDescription: "", speechInstruction: "", shortSpeechInstruction: "", toneDuration: 10, options: .None)
 
     
