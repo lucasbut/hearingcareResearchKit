@@ -11,19 +11,19 @@ import MobileCoreServices
 
 class HearingCareSearch: NSObject {
     //public static let domainIdentifier = "FLTWY.hearingCare"
-    func criarItemComID(uniqueIdentifier: String, titulo: String, descricao: String) {
+    func createItem(uniqueIdentifier: String, title: String, description: String) {
         
         // Criando um attibute set para um item que representa uma imagem
         let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeImage as String)
-        attributeSet.title = titulo
-        attributeSet.contentDescription = descricao
+        attributeSet.title = title
+        attributeSet.contentDescription = description
         
         // Criando o item de busca
         let item = CSSearchableItem(uniqueIdentifier: uniqueIdentifier, domainIdentifier: "FLTWY.hearingCare", attributeSet: attributeSet)
         
         // Indexando o item
         CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (err: NSError?) -> Void in
-            print("Item de busca indexado com sucesso!")
+            print("Indexado")
         }
     }
 }
