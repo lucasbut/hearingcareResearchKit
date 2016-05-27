@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let search = HearingCareSearch()
+        search.createItem("identifierHearing", title: "hearing", description: "enjoy to the hearing health research with\n HearingCare")
+        search.createItem("identifierCare", title: "care", description: "enjoy to the hearing health research with\n HearingCare")
     }
 
     override func didReceiveMemoryWarning() {
