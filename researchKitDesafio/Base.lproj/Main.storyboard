@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -24,12 +24,184 @@
                                     <segue destination="IEL-ts-Ot0" kind="show" id="kXX-9S-yPw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-Fd-bbP">
+                                <rect key="frame" x="277" y="487" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="487" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zQb-0z-NeD" kind="show" id="W6k-3V-obi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Audiometry View Controller-->
+        <scene sceneID="jMg-h1-Zod">
+            <objects>
+                <viewController id="zQb-0z-NeD" customClass="AudiometryViewController" customModule="hearingCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="66F-5w-qyO"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZl-LP-yJ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xhf-ew-WPO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-JP-xod">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGn-wB-411" customClass="SpringButton" customModule="hearingCare" customModuleProvider="target">
+                                <rect key="frame" x="172" y="299" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="3ES-3I-Jz5"/>
+                                    <constraint firstAttribute="width" constant="153" id="HGO-5d-hnk"/>
+                                </constraints>
+                                <state key="normal" image="User-Interface-Tap-icon.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3ES-3I-Jz5"/>
+                                        <exclude reference="HGO-5d-hnk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3ES-3I-Jz5"/>
+                                        <include reference="HGO-5d-hnk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="getHearingRange:" destination="zQb-0z-NeD" eventType="touchUpInside" id="jOZ-uK-glT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you start hearing the sound, tap the button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-aa-j37" customClass="SpringLabel" customModule="hearingCare" customModuleProvider="target">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="5RC-IH-cYH"/>
+                                    <constraint firstAttribute="height" constant="62.5" id="tm3-Fi-aqk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5RC-IH-cYH"/>
+                                        <exclude reference="tm3-Fi-aqk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5RC-IH-cYH"/>
+                                        <include reference="tm3-Fi-aqk"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0su-4e-GN2" customClass="SpringLabel" customModule="hearingCare" customModuleProvider="target">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-7c-yZi">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39.5" id="1th-kG-uvK"/>
+                                    <constraint firstAttribute="height" constant="74" id="6D3-8T-d2Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1th-kG-uvK"/>
+                                        <exclude reference="6D3-8T-d2Y"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1th-kG-uvK"/>
+                                        <include reference="6D3-8T-d2Y"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sGn-wB-411" firstAttribute="top" secondItem="TY4-aa-j37" secondAttribute="bottom" constant="56.5" id="5W4-SY-NCK"/>
+                            <constraint firstItem="o2q-7c-yZi" firstAttribute="top" secondItem="0su-4e-GN2" secondAttribute="bottom" constant="205" id="8EE-BH-PS4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="144"/>
+                            </constraint>
+                            <constraint firstItem="TY4-aa-j37" firstAttribute="top" secondItem="o2q-7c-yZi" secondAttribute="bottom" constant="92" id="EUf-Cy-Lfe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="58"/>
+                            </constraint>
+                            <constraint firstItem="2pL-JP-xod" firstAttribute="centerX" secondItem="sGn-wB-411" secondAttribute="centerX" id="Llu-RB-E8z"/>
+                            <constraint firstItem="0su-4e-GN2" firstAttribute="top" secondItem="66F-5w-qyO" secondAttribute="bottom" constant="93" id="TQ7-Hc-n2p"/>
+                            <constraint firstItem="sGn-wB-411" firstAttribute="centerX" secondItem="Xhf-ew-WPO" secondAttribute="centerX" id="U5U-r5-8ZO"/>
+                            <constraint firstItem="o2q-7c-yZi" firstAttribute="centerX" secondItem="Xhf-ew-WPO" secondAttribute="centerX" id="arE-RD-Kj8"/>
+                            <constraint firstItem="0su-4e-GN2" firstAttribute="centerX" secondItem="Xhf-ew-WPO" secondAttribute="centerX" id="dZh-cH-5Cb"/>
+                            <constraint firstItem="2pL-JP-xod" firstAttribute="centerY" secondItem="sGn-wB-411" secondAttribute="centerY" constant="20" id="eH0-jj-Dkp"/>
+                            <constraint firstItem="TY4-aa-j37" firstAttribute="centerX" secondItem="Xhf-ew-WPO" secondAttribute="centerX" id="eov-gr-27N"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2pL-JP-xod"/>
+                                <exclude reference="TY4-aa-j37"/>
+                                <exclude reference="0su-4e-GN2"/>
+                                <exclude reference="o2q-7c-yZi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="TQ7-Hc-n2p"/>
+                                <exclude reference="dZh-cH-5Cb"/>
+                                <exclude reference="8EE-BH-PS4"/>
+                                <exclude reference="arE-RD-Kj8"/>
+                                <exclude reference="EUf-Cy-Lfe"/>
+                                <exclude reference="eov-gr-27N"/>
+                                <exclude reference="5W4-SY-NCK"/>
+                                <exclude reference="U5U-r5-8ZO"/>
+                                <exclude reference="Llu-RB-E8z"/>
+                                <exclude reference="eH0-jj-Dkp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2pL-JP-xod"/>
+                                <include reference="TY4-aa-j37"/>
+                                <include reference="0su-4e-GN2"/>
+                                <include reference="o2q-7c-yZi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="TQ7-Hc-n2p"/>
+                                <include reference="dZh-cH-5Cb"/>
+                                <include reference="8EE-BH-PS4"/>
+                                <include reference="arE-RD-Kj8"/>
+                                <include reference="EUf-Cy-Lfe"/>
+                                <include reference="eov-gr-27N"/>
+                                <include reference="5W4-SY-NCK"/>
+                                <include reference="U5U-r5-8ZO"/>
+                                <include reference="Llu-RB-E8z"/>
+                                <include reference="eH0-jj-Dkp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="sGn-wB-411" id="UTU-sb-41p"/>
+                        <outlet property="countdownLabel" destination="o2q-7c-yZi" id="S0R-N8-MZF"/>
+                        <outlet property="labelFrequency" destination="0su-4e-GN2" id="Xsg-7X-slg"/>
+                        <outlet property="labelIntruction" destination="TY4-aa-j37" id="baM-5M-x1a"/>
+                        <outlet property="labelTab" destination="2pL-JP-xod" id="BVl-Ud-6ar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT5-VI-oiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="1194"/>
         </scene>
         <!--Research Authorization View Controller-->
         <scene sceneID="c5L-T0-IaY">
@@ -71,4 +243,7 @@
             <point key="canvasLocation" x="1852" y="330"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="User-Interface-Tap-icon.png" width="256" height="256"/>
+    </resources>
 </document>

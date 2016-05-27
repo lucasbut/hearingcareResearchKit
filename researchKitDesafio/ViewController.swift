@@ -10,10 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let audioGeneratorObject = ORKAudioGenerator()
-    var frequency = 200.0
-    var frequencyIncrementValue = 20.0
-    var timer: NSTimer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +27,7 @@ class ViewController: UIViewController {
 
     }
     
-    func updateFrequency() {
-        frequency += frequencyIncrementValue
-        frequencyIncrementValue += 0.05
-        audioGeneratorObject.playSoundAtFrequency(frequency, onChannel: ORKAudioChannel.Left, fadeInDuration: 0.0)
-        if frequency >= 20000.0 {
-            timer.invalidate()
-        }
-    }
+   
 
 }
 
