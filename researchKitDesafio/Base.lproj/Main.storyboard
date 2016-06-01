@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,16 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-Uu-G4U">
-                                <rect key="frame" x="277" y="279" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="IEL-ts-Ot0" kind="show" id="kXX-9S-yPw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-Fd-bbP">
-                                <rect key="frame" x="277" y="487" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-Fd-bbP">
+                                <rect key="frame" x="260" y="435" width="81" height="30"/>
+                                <state key="normal" title="Teste Audio"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="177" y="487" width="46" height="30"/>
                                 </variation>
@@ -34,8 +28,21 @@
                                     <segue destination="zQb-0z-NeD" kind="show" id="W6k-3V-obi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-Uu-G4U">
+                                <rect key="frame" x="263" y="135" width="74" height="30"/>
+                                <state key="normal" title="Formulário"/>
+                                <connections>
+                                    <segue destination="IEL-ts-Ot0" kind="show" id="kXX-9S-yPw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pnz-Fd-bbP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SjK-51-rmA"/>
+                            <constraint firstItem="pnz-Fd-bbP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3/2" id="YfS-4o-L8a"/>
+                            <constraint firstItem="kZh-Uu-G4U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1/2" id="u8C-c4-DsR"/>
+                            <constraint firstItem="kZh-Uu-G4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uDt-RA-koM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,10 +63,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-JP-xod">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGn-wB-411" customClass="SpringButton" customModule="hearingCare" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGn-wB-411" customClass="SpringButton" customModule="hearingCare" customModuleProvider="target">
                                 <rect key="frame" x="172" y="299" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="153" id="3ES-3I-Jz5"/>
@@ -89,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="62.5" id="tm3-Fi-aqk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -107,7 +114,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0su-4e-GN2" customClass="SpringLabel" customModule="hearingCare" customModuleProvider="target">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-7c-yZi">
@@ -117,7 +124,7 @@
                                     <constraint firstAttribute="height" constant="74" id="6D3-8T-d2Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -160,14 +167,14 @@
                             <mask key="constraints">
                                 <exclude reference="TQ7-Hc-n2p"/>
                                 <exclude reference="dZh-cH-5Cb"/>
-                                <exclude reference="8EE-BH-PS4"/>
-                                <exclude reference="arE-RD-Kj8"/>
-                                <exclude reference="EUf-Cy-Lfe"/>
-                                <exclude reference="eov-gr-27N"/>
-                                <exclude reference="5W4-SY-NCK"/>
-                                <exclude reference="U5U-r5-8ZO"/>
                                 <exclude reference="Llu-RB-E8z"/>
                                 <exclude reference="eH0-jj-Dkp"/>
+                                <exclude reference="EUf-Cy-Lfe"/>
+                                <exclude reference="eov-gr-27N"/>
+                                <exclude reference="8EE-BH-PS4"/>
+                                <exclude reference="arE-RD-Kj8"/>
+                                <exclude reference="5W4-SY-NCK"/>
+                                <exclude reference="U5U-r5-8ZO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -180,14 +187,14 @@
                             <mask key="constraints">
                                 <include reference="TQ7-Hc-n2p"/>
                                 <include reference="dZh-cH-5Cb"/>
-                                <include reference="8EE-BH-PS4"/>
-                                <include reference="arE-RD-Kj8"/>
-                                <include reference="EUf-Cy-Lfe"/>
-                                <include reference="eov-gr-27N"/>
-                                <include reference="5W4-SY-NCK"/>
-                                <include reference="U5U-r5-8ZO"/>
                                 <include reference="Llu-RB-E8z"/>
                                 <include reference="eH0-jj-Dkp"/>
+                                <include reference="EUf-Cy-Lfe"/>
+                                <include reference="eov-gr-27N"/>
+                                <include reference="8EE-BH-PS4"/>
+                                <include reference="arE-RD-Kj8"/>
+                                <include reference="5W4-SY-NCK"/>
+                                <include reference="U5U-r5-8ZO"/>
                             </mask>
                         </variation>
                     </view>
@@ -218,6 +225,7 @@
                     </view>
                     <connections>
                         <segue destination="dP1-Kl-plf" kind="presentation" identifier="showResearch" id="D6v-P9-F92"/>
+                        <segue destination="dP1-Kl-plf" kind="show" identifier="showAudio" id="2oe-kX-5dj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zg5-Ed-bEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -246,4 +254,7 @@
     <resources>
         <image name="User-Interface-Tap-icon.png" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2oe-kX-5dj"/>
+    </inferredMetricsTieBreakers>
 </document>

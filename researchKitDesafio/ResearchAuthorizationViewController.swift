@@ -11,6 +11,7 @@ import UIKit
 
 class ResearchAuthorizationViewController: UIViewController{
     
+    var isCompleted: Bool = false
     
     let authorizationViewController = ORKTaskViewController(task: AuthorizationTasks, taskRunUUID: nil)
     var isAuthorized: Bool! {
@@ -24,7 +25,7 @@ class ResearchAuthorizationViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -33,10 +34,13 @@ class ResearchAuthorizationViewController: UIViewController{
         if isAuthorized == false  {
             authorizationViewController.delegate = self
             presentViewController(authorizationViewController, animated: true, completion: nil)
-        } else {
+        } else if isCompleted == false{
             self.performSegueWithIdentifier("showResearch", sender: self)
+            isCompleted = true
+        } else {
+            self.performSegueWithIdentifier("showAudio", sender: self)
         }
-   
+        
     }
     
 }
@@ -44,10 +48,11 @@ class ResearchAuthorizationViewController: UIViewController{
 extension ResearchAuthorizationViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason:ORKTaskViewControllerFinishReason, error: NSError?) {
-                //Handle results with taskViewController.result
+        //Handle results with taskViewController.result
+        
         isAuthorized = true
         taskViewController.dismissViewControllerAnimated(true, completion: {
-        
+            
         })
     }
     
